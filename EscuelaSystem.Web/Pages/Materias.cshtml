@@ -1,0 +1,51 @@
+﻿@page
+@model EscuelaSystem.Web.Pages.MateriasModel
+@{
+}
+
+<div>
+    <h1>Listado de Materias</h1>
+</div>
+<div>
+    <a type="button" asp-page="/CrearMateria" class="btn btn-success">Ingresar Una Materia</a>
+    <br />
+    <hr />
+</div>
+
+
+<table class="table table-bordered">
+    
+    <tr>
+        <th>Id</th>
+        <th>Codigo</th>
+        <th>Nombre</th>
+        <th>Habilitada</th>
+        <th>Opciones</th>
+    </tr>
+    <tbody>
+        @foreach (var item in Model.Materias)
+        {
+            <tr>
+                <td>@item.Id</td>
+                <td>@item.Codigo</td>
+                <td>@item.Decripcion</td>
+                <td>
+
+                    @if (item.Habilitada)
+                    {
+                        <p>SI</p>
+                    }
+                    else
+                    {
+                        <p>NO</p>
+                    }
+                </td>
+                <td>
+                    <a class="btn btn-sm btn-info" asp-page="/EditarMateria" asp-route-id="@item.Id">Editar</a>
+                    <a class="btn btn-sm btn-danger" asp-page="/EliminarMateria" asp-route-id="@item.Id">Eliminar</a>
+                </td>
+            </tr>
+        }
+    </tbody>  
+    </tbody>  
+</table>

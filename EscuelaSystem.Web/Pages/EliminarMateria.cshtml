@@ -1,0 +1,28 @@
+﻿@page
+@model EscuelaSystem.Web.Pages.EliminarMateriaModel
+@{
+}
+
+<div>
+    <h1>Eliminar Materia</h1>
+</div>
+
+<form method="post">
+    <input type="hidden" asp-for="Materias.Id" />
+    <div asp-validation-summary="ModelOnly"></div>
+    <div class="form-group">
+        <label asp-for="Materias.Codigo"></label>
+        <input type="text" class="form-control" asp-for="Materias.Codigo" placeholder="Ingrese un codigo de materia" disabled>
+    </div>
+    <div class="form-group">
+        <label asp-for="Materias.Decripcion"></label>
+        <input type="text" class="form-control disabled" asp-for="Materias.Decripcion" placeholder="Ingrese el nombre d ela materia" disabled>
+    </div>
+    <div class="form-group">
+        <label asp-for="Materias.Habilitada"></label>
+        <input type="checkbox" class="form-control disabled" asp-for="Materias.Habilitada" disabled>
+    </div>
+
+    <button type="submit" class="btn btn-danger">Eliminar</button>
+    <a type="button" asp-page="/Materias" class="btn btn-primary">Regresar</a>
+</form>
