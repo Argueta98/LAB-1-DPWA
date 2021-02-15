@@ -10,12 +10,12 @@ namespace EscuelaSystem.Models
         [Required(ErrorMessage = "El campo Codigo de instructor no puede estar vacio")]
         [MinLength(2, ErrorMessage = "Escriba mas de 2 o mas digitos ")]
         [MaxLength(10, ErrorMessage = "Escriba menos de 10 digitos ")]
-        [Display(Name = "Codigo de Materia")]
+        [Display(Name = "Codigo de Instructor")]
         public string Codigo { get; set; }
         [Required(ErrorMessage = "El campo nombre de instructor no debe quedar vacio")]
         [MinLength(2, ErrorMessage = "Escriba 3 o más caracteres ")]
         [MaxLength(50, ErrorMessage = "Escriba menos de 50 digitos ")]
-        [Display(Name = "Nombre del Alumno")]
+        [Display(Name = "Nombre del instructor ")]
         public string Nombres { get; set; }
         [Required(ErrorMessage = "El campo nombre de instructor no debe quedar vacio")]
         [MinLength(2, ErrorMessage = "Escriba 3 o más caracteres ")]

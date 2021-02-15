@@ -22,10 +22,10 @@ namespace EscuelaSystem.Models
         [MaxLength(50, ErrorMessage = "Escriba menos de 50 digitos ")]
         [Display(Name = "Apellido del Alumno")]
         public string Apellidos { get; set; }
-        public int Edad { get; set; }
         [Required(ErrorMessage = "El campo nombre de alumno no debe quedar vacio")]
         [MinLength(1, ErrorMessage = "Escriba 1 o 2 caracteres")]
         [MaxLength(2, ErrorMessage = "Escriba 2 caracteres ")]
+        public int Edad { get; set; }
         public bool Activo { get; set; }
     }
 }

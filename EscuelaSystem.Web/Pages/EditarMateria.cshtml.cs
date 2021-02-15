@@ -2,8 +2,6 @@ using EscuelaSystem.Data.Interfaces;
 using EscuelaSystem.Models;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
-using Microsoft.AspNetCore.Mvc.RazorPages;
-
 namespace EscuelaSystem.Web.Pages
 {
     public class EditarMateriaModel : PageModel

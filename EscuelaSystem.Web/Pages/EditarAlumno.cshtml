@@ -1,0 +1,38 @@
+﻿@page
+@model EscuelaSystem.Web.Pages.EditarAlumnoModel
+@{
+}
+
+<h1>Editar Materia</h1>
+
+<form method="post">
+    <input type="hidden" asp-for="Alumnos.Id" />
+    <div asp-validation-summary="ModelOnly"></div>
+    <div class="form-group">
+        <label asp-for="Alumnos.Codigo"></label>
+        <input type="text" class="form-control" asp-for="Alumnos.Codigo" placeholder="Ingrese un codigo del alumno">
+        <span class="text-danger" asp-validation-for="Alumnos.Codigo"></span>
+    </div>
+    <div class="form-group">
+        <label asp-for="Alumnos.Nombres"></label>
+        <input type="text" class="form-control" asp-for="Alumnos.Nombres" placeholder="Ingrese el nombre del alumno">
+        <span class="text-danger" asp-validation-for="Alumnos.Nombres"></span>
+    </div>
+    <div class="form-group">
+        <label asp-for="Alumnos.Apellidos"></label>
+        <input type="text" class="form-control" asp-for="Alumnos.Apellidos" placeholder="Ingrese los apellidos del alumno">
+        <span class="text-danger" asp-validation-for="Alumnos.Apellidos"></span>
+    </div>
+    <div class="form-group">
+        <label asp-for="Alumnos.Edad"></label>
+        <input type="text" class="form-control" asp-for="Alumnos.Edad" placeholder="Ingrese la edad del alumno">
+        <span class="text-danger" asp-validation-for="Alumnos.Edad"></span>
+    </div>
+    <div class="form-group">
+        <label asp-for="Alumnos.Activo"></label>
+        <input type="checkbox" class="form-control" asp-for="Alumnos.Activo">
+    </div>
+
+    <button type="submit" class="btn btn-primary">Actualizar</button>
+    <a type="button" asp-page="/Alumnos" class="btn btn-primary">Regresar</a>
+</form>

@@ -5,6 +5,7 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <Content Remove="Pages\EditarAlumno.cshtml" />
     <Content Remove="Pages\Materias.cshtml" />
   </ItemGroup>
 
@@ -29,11 +30,17 @@
   </ItemGroup>
 
   <ItemGroup>
+    <_ContentIncludedByDefault Remove="Pages\EditarAlumno.cshtml" />
     <_ContentIncludedByDefault Remove="Pages\Materias.cshtml" />
   </ItemGroup>
 
   <ItemGroup>
+    <None Include="Pages\EditarAlumno.cshtml" />
     <None Include="Pages\Materias.cshtml" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <UpToDateCheckInput Remove="Pages\EditarAlumno.cshtml" />
   </ItemGroup>
 
 </Project>

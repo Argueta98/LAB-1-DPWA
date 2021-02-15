@@ -2,7 +2,7 @@
 
 namespace EscuelaSystem.Data.Migrations
 {
-    public partial class ExistingMigration : Migration
+    public partial class InitialMigration3 : Migration
     {
         protected override void Up(MigrationBuilder migrationBuilder)
         {

@@ -13,8 +13,4 @@
     <ProjectReference Include="..\EscuelaSystem.Models\EscuelaSystem.Models.csproj" />
   </ItemGroup>
 
-  <ItemGroup>
-    <Folder Include="Migrations\" />
-  </ItemGroup>
-
 </Project>
